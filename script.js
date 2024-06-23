@@ -2,8 +2,6 @@ function setContractSize(value) {
     document.getElementById('contract_size').value = value;
 }
 
-
-
 function calculate() {
     const funds = parseFloat(document.getElementById('funds').value);
     const riskPerTrade = parseFloat(document.getElementById('risk_per_trade').value);
@@ -42,6 +40,9 @@ function updateRRRTable(bep, bp, slp) {
     const headerRow = table.querySelector('thead tr');
     const dataRow = table.querySelector('tbody tr');
 
+    // Ensure the table has at least one row
+    if (!headerRow || !dataRow) return;
+
     for (let i = 0; i < headerRow.cells.length; i++) {
         const columnNumber = i + 1; // Adjust for 1-based indexing
         const value = bep + (columnNumber * (bp - slp));
@@ -53,6 +54,9 @@ function addRRRColumn() {
     const table = document.getElementById('rrr-table');
     const headerRow = table.querySelector('thead tr');
     const dataRow = table.querySelector('tbody tr');
+
+    // Ensure the table has at least one row
+    if (!headerRow || !dataRow) return;
 
     const newColumnIndex = headerRow.cells.length + 1; // Adjust for 1-based indexing
     const columnNumber = newColumnIndex;

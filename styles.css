@@ -395,6 +395,11 @@ body, html {
         font-family: 'Ubuntu', sans-serif;
         font-weight: bold;
     }
+
+    #rrr-section .table-wrapper {
+        overflow-x: auto;
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 768px) {
@@ -462,5 +467,9 @@ body, html {
         font-weight: bold;
     }
 
+    #rrr-section .table-wrapper {
+        overflow-x: auto;
+        margin: 0 auto;
+    }
     
 }
