@@ -19,9 +19,9 @@ function calculate() {
         return;
     }
 
-    const positionSize = (buyingPrice * riskPerTrade) / (buyingPrice - stopLoss);
-    const contractsToBuy = positionSize / (buyingPrice * contractSize);
-    const tradingFees = positionSize * 0.001;
+    const positionSize = Math.abs((buyingPrice * riskPerTrade) / (buyingPrice - stopLoss));
+    const contractsToBuy = Math.abs(positionSize / (buyingPrice * contractSize));
+    const tradingFees = Math.abs(positionSize * 0.001);
     const actualLossAfterSL = riskPerTrade + tradingFees;
     const breakevenPrice = buyingPrice + (((buyingPrice - stopLoss) / riskPerTrade) * tradingFees);
 
