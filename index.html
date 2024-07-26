@@ -9,6 +9,9 @@
 </head>
 <body>
     <h1 class="title">CRYPTO TRADING CALC</h1>
+    <div class="sub-title">
+        <h3>Best works for Delta Exchange India<sup class="sup">*</sup></h3>
+    </div>
     <div class="container">
         <!-- Input Container -->
         <div class="input-container">
@@ -53,19 +56,31 @@
             </form>
         </div>
 
+        
         <!-- Output Container -->
         <div class="output-container">
             <!-- Result values -->
             <div id="results">
                 <span id="contracts_to_buy" class="highlight"></span>
+                <p 
+                id="contracts_adjustment" 
+                class="small-text" 
+                style="display: none; font-size: 0.9rem; text-align: end; margin-top: -4px; margin-bottom: 7px; color: rgb(60, 63, 67);"
+                >
+                    Adjust your leverage according to contracts<sup class="sup">*</sup>
+                </p> 
                 <p id="position_size"></p>
-                <p id="trading_fees"></p>
+                <p id="trading_fees" style="display: none;">
+                    Trading Fees <sub style="font-size: 0.75rem">(Approx at market price buying and selling)</sub> :
+                    <span id="trading_fees_value" style="font-size: 1.2rem;"></span>
+                </p>
                 <p id="actual_loss_after_sl"></p>
                 <p id="breakeven_price"></p>
             </div>
 
             <div id="rrr-section">
                 <h2>RISK REWARD RATIO</h2>
+                <p style="font-size: 0.93rem; font: italic; margin-top: -10px; margin-bottom: 10px;"><Span style="color: red; font:italic">Be aware</Span> of the risk and reward, considering the higher fees involved...</p>
                 <div class="table-wrapper">
                     <table id="rrr-table">
                         <thead>

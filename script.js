@@ -28,9 +28,12 @@ function calculate() {
     document.getElementById('position_size').textContent = `Position Size : ${positionSize.toFixed(2)}`;
     document.getElementById('contracts_to_buy').textContent = `CONTRACTS TO BUY : ${contractsToBuy.toFixed(2)}`;
     document.getElementById('contracts_to_buy').classList.add('highlighted-background');
-    document.getElementById('trading_fees').textContent = `Trading Fees : ${tradingFees.toFixed(2)}`;
+    let TradingFees = document.getElementById('trading_fees');
+    document.getElementById('trading_fees_value').textContent = tradingFees.toFixed(2);
     document.getElementById('actual_loss_after_sl').textContent = `Actual Loss After SL : ${actualLossAfterSL.toFixed(2)}`;
-    document.getElementById('breakeven_price').textContent = `Breakeven Price : ${breakevenPrice.toFixed(2)}`;
+    document.getElementById('breakeven_price').textContent = `Approx Breakeven Price (After fees) : ${breakevenPrice.toFixed(2)}`;
+    document.getElementById('contracts_adjustment').style.display = 'block';
+    document.getElementById('trading_fees').style.display = 'block';
 
     updateRRRTable(breakevenPrice, buyingPrice, stopLoss);
 }
@@ -43,9 +46,14 @@ function updateRRRTable(bep, bp, slp) {
     // Ensure the table has at least one row
     if (!headerRow || !dataRow) return;
 
-    for (let i = 0; i < headerRow.cells.length; i++) {
+    // Filling value for 1:1 RRR column
+    const firstColValue = bep + (bp - slp);
+    dataRow.cells[0].textContent = firstColValue.toFixed(2);
+
+    // Filling values for 2nd column and above
+    for (let i = 1; i < headerRow.cells.length; i++) {
         const columnNumber = i + 1; // Adjust for 1-based indexing
-        const value = bep + (columnNumber * (bp - slp));
+        const value = bep + (columnNumber * (bep - slp));
         dataRow.cells[i].textContent = value.toFixed(2);
     }
 }
