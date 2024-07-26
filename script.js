@@ -53,7 +53,7 @@ function updateRRRTable(bep, bp, slp) {
     // Filling values for 2nd column and above
     for (let i = 1; i < headerRow.cells.length; i++) {
         const columnNumber = i + 1; // Adjust for 1-based indexing
-        const value = bep + (columnNumber * (bep - slp));
+        const value = bp + (columnNumber * (bep - slp));
         dataRow.cells[i].textContent = value.toFixed(2);
     }
 }
