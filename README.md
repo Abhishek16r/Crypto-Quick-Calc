@@ -43,10 +43,10 @@ Crypto Trading Calc follows a simple and efficient architecture, comprising an i
 To set up the *Crypto Quick Calc* project locally, follow these steps:
 
 1. **Clone the Repository:**
-* *git clone https://github.com/Abhishek16r/Crypto-Quick-Calc.git*
+  * *git clone https://github.com/Abhishek16r/Crypto-Quick-Calc.git*
 
 2. **Navigate to the Project Directory:**
-* *cd crypto-quick-calc*
+  * *cd crypto-quick-calc*
 
 3. **No additional server setup is required for local deployment:**
-* *Open index.html in a Web Browser*
+  * *Open index.html in a Web Browser*
