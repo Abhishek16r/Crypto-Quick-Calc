@@ -1,4 +1,4 @@
-# Crypto Trading Calc - Tool for Traders [Website Link](https://abhishek16r.github.io/Crypto-Quick-Calc/)
+# Crypto Quick Calc - Tool for Traders [Website Link](https://abhishek16r.github.io/Crypto-Quick-Calc/)
 
 ## Project Overview
 Crypto Trading Calc is a sophisticated tool designed to simplify crypto trading calculations for traders and enthusiasts. Whether you're an experienced trader or just starting out, this web-based application helps you quickly and accurately compute key trading metrics, optimize your trade strategies, and manage your risks effectively.
