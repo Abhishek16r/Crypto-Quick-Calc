@@ -39,8 +39,8 @@ Crypto Trading Calc follows a simple and efficient architecture, comprising an i
 2. **Calculate:** Click on *"Let's Trade"* to see the results including position size, contracts to buy, and trading fees.
 3. **Adjust Risk-Reward:** Use the *"Add More"* and *"Remove Last"* buttons to modify the risk-reward ratio table and analyze different scenarios.
 
-## Deployment
-To deploy Crypto Trading Calc:
+## Installation
+To set up the *Crypto Quick Calc* project locally, follow these steps:
 
 1. **Clone the Repository:**
 * *git clone https://github.com/Abhishek16r/Crypto-Quick-Calc.git*
