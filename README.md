@@ -31,11 +31,11 @@ Crypto Trading Calc follows a simple and efficient architecture, comprising an i
 
 ### Sample Usage
 1. **Enter Values:**
-* *Funds Available: $10,000*
-* *Risk Per Trade: 1%*
-* *Buying Price: $20,000*
-* *Stop Loss Price: $19,000*
-* *Contract Size: 0.01 BTC*
+   * *Funds Available: $10,000*
+   * *Risk Per Trade: 1%*
+   * *Buying Price: $20,000*
+   * *Stop Loss Price: $19,000*
+   * *Contract Size: 0.01 BTC*
 2. **Calculate:** Click on *"Let's Trade"* to see the results including position size, contracts to buy, and trading fees.
 3. **Adjust Risk-Reward:** Use the *"Add More"* and *"Remove Last"* buttons to modify the risk-reward ratio table and analyze different scenarios.
 
@@ -43,10 +43,10 @@ Crypto Trading Calc follows a simple and efficient architecture, comprising an i
 To set up the *Crypto Quick Calc* project locally, follow these steps:
 
 1. **Clone the Repository:**
-  * *git clone https://github.com/Abhishek16r/Crypto-Quick-Calc.git*
+   * *git clone https://github.com/Abhishek16r/Crypto-Quick-Calc.git*
 
-2. **Navigate to the Project Directory:**
-  * *cd crypto-quick-calc*
+3. **Navigate to the Project Directory:**
+   * *cd crypto-quick-calc*
 
 3. **No additional server setup is required for local deployment:**
-  * *Open index.html in a Web Browser*
+   * *Open index.html in a Web Browser*
